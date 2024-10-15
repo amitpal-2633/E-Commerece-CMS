@@ -217,7 +217,7 @@ const updateStock = async (req, res) => {
       stock,
     });
   } catch (error) {
-    console.log(">>>>>>>>>>>>>>>>>>>>>>>>>", error);
+    // console.log(">>>>>>>>>>>>>>>>>>>>>>>>>", error);
     
     return res.status(500).json({ message: "Error updating stock", error });
   }
